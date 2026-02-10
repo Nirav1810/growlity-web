@@ -76,7 +76,7 @@ export default function ChatBot() {
 
       {/* Chat Window */}
       <div
-        className={`fixed bottom-24 right-4 z-50 flex w-full max-w-[300px] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl transition-all duration-300 origin-bottom-right sm:right-6 sm:w-[300px] ${
+        className={`fixed bottom-20 right-3 z-50 flex w-full max-w-[260px] flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl transition-all duration-300 origin-bottom-right sm:bottom-24 sm:right-6 sm:w-[350px] sm:max-w-[350px] ${
           isOpen
             ? "scale-100 opacity-100 translate-y-0"
             : "scale-90 opacity-0 translate-y-4 pointer-events-none"
@@ -89,7 +89,7 @@ export default function ChatBot() {
           <p className="text-xs text-white/90">Ask us anything or choose a topic</p>
         </div>
 
-        <div className="overflow-y-auto overscroll-contain bg-muted/30 p-4" style={{ height: "380px" }}>
+        <div className="overflow-y-auto overscroll-contain bg-muted/30 p-3 h-64 sm:p-4 sm:h-96">
           <div className="space-y-4 pb-4">
             {messages.map((msg) => (
               <div
